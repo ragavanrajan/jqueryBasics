@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Selectors</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+             </header>
+            <div id="contianer">
+<h1 id="heading1"> Heading one</h1>
+<p id="paral">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda facilis dolorum voluptatum veniam quaerat provident ipsa, sequi minus tenetur numquam corrupti cumque, molestias, obcaecati sint. Autem dolores ipsam beatae praesentium?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. <span> Blanditiis non magnam perspiciatis exercitationem repellendus ab.</span>
+
+</p>
+<h1 class="heading2"> Heading one</h1>
+<p id="para2">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda facilis dolorum voluptatum veniam quaerat provident ipsa, sequi minus tenetur numquam corrupti cumque, molestias, obcaecati sint. Autem dolores ipsam beatae praesentium?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. <span> Blanditiis non magnam perspiciatis exercitationem repellendus ab.</span>
+
+</p>
+<ul id="list">
+    <li>list item</li> <li>list item</li> <li>list item</li> <li>list item</li> <li>list item</li> <li>list item</li>
+</ul>
+<input type="button" value="Button 1">
+<input type="Submit" value = "Button 1">
+<input type="text">
+
+<a href="http://google.com"> Google</a>
+<a href="http://yahoo.com"> Yahoo </a>
+            </div>
+            <script>
+                // $('h1').hide();
+                // $('h1#heading1').hide();
+                // $('.heading2').hide();
+                $('p span').css('color', 'red');
+                $('ul#list li:first').css('color', 'red');
+                $('ul#list li:last').css('color', 'green');
+                 $('ul#list li:even').css('background-color', 'yellow');
+                  $('ul#list li:odd').css('color', 'blue');
+                   $('ul#list li:nth-child(3n').css('list-style', 'none');
+                   $(':button').hide();
+                   $(':submit').hide();
+                   //target attributes 
+                   $('[href]').css('color','red');
+                   //target attribute values 
+                   $('a[href="http://yahoo.com"').css('color','green');
+
+            </script>
+       
+    </body>
+</html>
