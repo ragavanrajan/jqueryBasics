@@ -1,2 +1,2 @@
-# jqueryBasics
-jquery basics
+# jQueryBasics
+jQuery basics
